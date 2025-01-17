@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte de Arti </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ec88c7d6;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .about, .gallery, .contact {
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px auto;
+            display: block;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        form button {
+            background-color: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Galería de Arte de Arti</h1>
+</header>
+
+<nav>
+    <a href="#about">Sobre mí</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<div class="container">
+
+    <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Arti , una apasionada del arte. Mis pinturas reflejan tanto mi vision del mundo como mis sentimientos. Bienvenidos a mi espacio virtual donde comparto mi trabajo con ustedes, tomen una galletita virtual y disfruten.</p>
+        <img src="C:\Users\leoep\Downloads\Pintura 0.jpg" alt="Pintura 0">
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <img src="C:\Users\leoep\Downloads\Pintura 1.jpg" alt="Pintura 1">
+        <img src="C:\Users\leoep\Downloads\Pintura 2.jpg" alt="Pintura 2">
+        <img src="C:\Users\leoep\Downloads\Pintura 3.jpg" alt="Pintura 3">
+        <!-- Agrega más imágenes aquí -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Arti. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
